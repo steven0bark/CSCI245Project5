@@ -31,13 +31,10 @@ main(void)
 	int i;
 	struct bit_vector *vec = bv_create(10);
 
-	/*  delete this line to test part 3-C
 
 	printf("3C vec = ");   
 	printVec(vec);
 
-
-	/* delete this line to test part 3-D
 
 	bv_insert(vec, 5);
 
@@ -49,7 +46,6 @@ main(void)
 	printf("3Dii vec = ");
 	printVec(vec);
 
-	/* delete this line to test part 3-E
 
 	bv_remove(vec, 4);
 
@@ -62,8 +58,6 @@ main(void)
 	printf("3Eii vec = ");
 	printVec(vec);
 
-
-	/* delete this line to test part 4-A
 
 	bv_insert(vec, 0);
 	bv_insert(vec, 3);
@@ -81,8 +75,6 @@ main(void)
 	printVec(vec2);
 
 
-	/* delete this line to test part 4-B
-
 	bv_remove(vec2, 5);
 	bv_remove(vec2, 8);
 	bv_insert(vec2, 3);
@@ -99,7 +91,7 @@ main(void)
 	printVec(vec3);
 
 
-	/* delete this line to test part 4-C
+
 
 	printf("4Ci vec = ");
 	printVec(vec);
@@ -113,7 +105,6 @@ main(void)
 	printVec(vec4);
 
 
-	/* delete this line to test part 4-D
 
 	printf("4Di vec = ");
 	printVec(vec);
@@ -131,8 +122,6 @@ main(void)
 	bv_destroy(vec3);
 	bv_destroy(vec2);
 
-
-	*//* delete this line also when testing 4-D */
 	bv_destroy(vec);
 
 	return 0;
