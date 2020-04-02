@@ -22,7 +22,7 @@ bv_create(int size)
 }
 
 void
-v_destroy(struct bit_vector *v)
+bv_destroy(struct bit_vector *v)
 {
 	free(v->vector);
 	free(v);
