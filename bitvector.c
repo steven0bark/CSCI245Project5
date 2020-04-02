@@ -2,8 +2,6 @@
 
 #include "bitvector.h"
 
-#include <math.h>
-
 
 int
 numBytes(int n)
