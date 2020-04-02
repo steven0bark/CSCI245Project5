@@ -5,11 +5,18 @@
 #include <math.h>
 
 
+int
+numBytes(int n)
+{
+	return (n/8)+1;
+}
+
+
 struct bit_vector *
 bv_create(int size)
 {
 	
-	struct bit_vector *v = malloc(sizeof(struct bit_vector));
+	struct bit_vector *v = malloc(numBytes(size));
 	v->size = size;
 	v->vector = malloc(size);
 	return v;
@@ -17,7 +24,7 @@ bv_create(int size)
 }
 
 void
-bv_destroy(struct bit_vector *v)
+v_destroy(struct bit_vector *v)
 {
 	free(v->vector);
 	free(v);
