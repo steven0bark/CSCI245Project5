@@ -10,6 +10,8 @@ typedef struct bit_vector bit_vector_t;
 
 struct bit_vector *bv_create(int size);
 
+int numBytes(int n);
+
 void bv_destroy(struct bit_vector *v);
 
 void bv_insert(struct bit_vector *v, int i);
