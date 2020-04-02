@@ -26,9 +26,7 @@ bv_destroy(struct bit_vector *v)
 int
 bv_contains(struct bit_vector *v, int i)
 {
-	unsigned char copy = (v->vector)[i/8];
-	return (copy & 1 << i % 8);
-	
+	return (v->vector[i/8] & 1 << i % 8);
 }
 
 void
