@@ -2,6 +2,8 @@
 
 #include "bitvector.h"
 
+/*Steven Barker*/
+
 void
 printVec(struct bit_vector *vec)
 {
@@ -18,6 +20,11 @@ printVec(struct bit_vector *vec)
 	printf("} \n");
 }
 
+/**
+ * Creates a bit_vector pointer and inserts every value into the set
+ * Then, beinning at 2, iterates through each number and if that number is divisible by
+ * something other than one and itself, than it is removed from the set, leaving only the primes 
+ */
 int
 main(void)
 {

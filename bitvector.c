@@ -2,6 +2,7 @@
 
 #include "bitvector.h"
 
+/*Steven Barker*/
 
 int
 numBytes(int n)
